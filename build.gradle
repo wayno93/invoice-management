@@ -1,20 +1,22 @@
 plugins {
     id 'org.springframework.boot' version '1.5.2.RELEASE'
-    id 'java'
 }
 
 group 'com.wtech'
 version '0.1.0-SNAPSHOT'
 
 allprojects {
+    apply plugin: 'java'
+    apply plugin: 'groovy'
+    apply plugin: 'idea'
+    apply plugin: 'org.springframework.boot'
+
     repositories {
         mavenLocal()
         mavenCentral()
     }
 }
 
-subprojects{
-    apply plugin: 'java'
-    apply plugin: 'groovy'
-    apply plugin: 'org.springframework.boot'
+springBoot{
+    mainClass = 'com.wtech.invoicemanagement.web.Application'
 }
