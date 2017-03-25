@@ -1,0 +1,4 @@
+rootProject.name = 'invoice-management'
+
+include "service"
+include "web"
