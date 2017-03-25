@@ -16,7 +16,3 @@ allprojects {
         mavenCentral()
     }
 }
-
-springBoot{
-    mainClass = 'com.wtech.invoicemanagement.web.Application'
-}
